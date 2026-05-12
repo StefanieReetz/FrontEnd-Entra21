@@ -1,0 +1,18 @@
+ /* todas as span */
+ span{
+    color:hsl(172, 86%, 20%);
+}
+
+/* especifico */
+
+.cor-nome {
+    color: wheat;
+}
+
+.cor-hex {
+    color: #8681c0;
+}
+
+.cor-rgb {
+    color: rgba(204, 95, 171, 0.801);
+}
