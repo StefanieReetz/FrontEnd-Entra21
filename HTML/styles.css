@@ -1,6 +1,9 @@
  /* todas as span */
  span{
     color:hsl(172, 86%, 20%);
+    font-size: 64px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 /* especifico */
@@ -15,4 +18,28 @@
 
 .cor-rgb {
     color: rgba(204, 95, 171, 0.801);
+}
+body{
+    background-color: wheat;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.zctDsFO4NbfQcrWXEYZVwwHaNK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    text-align: center;
+    background-color: linen;
+    width: 50%;
+    height: 50%;
+    /* margem em relaçao ao site inteiro */
+    /* em cima,  direita, em baixo, esquerda*/
+    margin: 20% 50% 20% 20%;
+
+    /* margem dentro da div */
+    padding: 3%;
+
+    border: 9px double rgb(59, 47, 34);
+    border-radius: 25%;
+
+    box-sizing: border-box;
+
 }
