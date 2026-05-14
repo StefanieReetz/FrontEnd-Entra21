@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+th, td {
+    /*tamanho, solid= uma linha dura, cor da borda */
+    border: 3px solid hsl(89, 24%, 22%);
+    padding: 12px;
+    text-align: center;
+    color: #474e3f;
+}
+th{
+    background-color: #4c5544;
+    color: #eef8e4;
+}
+tr:nth-child(even){
+    background-color: #d5e7d2;
+}
+img{
+    width: 100px;
+}
