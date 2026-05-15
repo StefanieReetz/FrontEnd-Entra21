@@ -9,14 +9,19 @@ th, td {
     padding: 12px;
     text-align: center;
     color: #474e3f;
+    
 }
 th{
     background-color: #4c5544;
     color: #eef8e4;
 }
+img{
+    width: 100px;
+}
+
 tr:nth-child(even){
     background-color: #d5e7d2;
 }
-img{
-    width: 100px;
+tr:hover{
+    background-color: #9cac8f;
 }
