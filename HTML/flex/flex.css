@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    background-color: rgb(221, 176, 178);
+    /* centralizar ao meio da div */
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 222, 228);
+    margin: 10px;
+}
+/* flex-start: Items align to the left side of the container.
+flex-end: Items align to the right side of the container.
+center: Items align at the center of the container.
+space-between: Items display with equal spacing between them.
+space-around: Items display with equal spacing around them. */
