@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+    width: 100%;
+    background-color: #000020;
+
+}
+h1 {
+    color: #f8eeef;
+}
+
+table {
+    margin-left: 20px;
+    margin-top: 8%;
+    text-align: center;
+    width: 95%;
+    border-collapse: collapse;
+    background-color: rgba(155, 158, 196, 0.911);
+}
+th, td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: rgb(7, 4, 19);
+    border: 1px solid rgb(13, 23, 39);
+    padding: 1.5%;
+}
+th {
+    color: #f8eeef;
+    background-color:#273650 ;
+
+}
+tr:nth-child(even){
+    background-color: rgba(112, 120, 173, 0.986);
+}
+caption {
+    font-weight:bold;
+    font-size: x-large;
+    color: #a6b7e9;
+    text-align: center;
+    padding: 20px;
+    font-family:cursive;
+    margin-bottom: 20px;
+}
+footer {
+    color: #8b7b8b;
+}
+img {
+    width: 80%;
+}
+.artistas {
+    margin-top: 7%;
+    background-color: hsla(236, 26%, 69%, 0.412);
+    gap: 5px;
+    /* altura */
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    display: flex;
+    /* controla o espaçamento entre os caras */
+    justify-content: space-evenly;
+    /* alinha os caras no lugar q vc qr */
+    align-items:center;
+    /* se é em linha, coluna... */    /* imenda os caras em uma nova coluna */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.artista {
+    padding-top: 15px;
+    width: 15vb;
+    color:#000020;
+    text-align: center;
+    height: 20vh;
+    background-color: rgb(231, 234, 241);
+    margin: 10px;
+}
+header {
+    margin-top: 3%;
+}
+a {
+    font-size: medium;
+    color: rgb(165, 182, 233);
+    margin-left: 20px;
+}
