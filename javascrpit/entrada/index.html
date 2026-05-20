@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de soma</h1>
+    <!-- esse for nao é um laço de repetiçao -->
+    <label for="numUm">Primeiro número</label>
+    <input id="numUm" type="text" placeholder="Digite um número">
+
+    <label for="numDois">Segundo Numero</label>
+    <input id="numDois" type="text" placeholder="Digite um segundo número">
+ 
+    <button onclick="somar()">Somar</button>
+
+    <script>
+
+        function somar(){
+            let numUm = document.getElementById("numUm").value
+            let numDois = document.getElementById("numDois").value
+            alert(Number(numUm) + Number(numDois))
+        }
+
+    </script>
+
+</body>
+</html>
