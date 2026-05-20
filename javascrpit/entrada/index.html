@@ -14,14 +14,23 @@
     <label for="numDois">Segundo Numero</label>
     <input id="numDois" type="text" placeholder="Digite um segundo número">
  
+    <h2>Resultado: <span id="soma">0</span></h2>
+
     <button onclick="somar()">Somar</button>
+
+
 
     <script>
 
         function somar(){
             let numUm = document.getElementById("numUm").value
             let numDois = document.getElementById("numDois").value
-            alert(Number(numUm) + Number(numDois))
+            // alert(Number(numUm) + Number(numDois))
+
+            let soma = Number(numUm) + Number(numDois)
+
+            //esse inner é oq esta dentro de uma certa tag, tipo <h1>ELE VAI PEGAR OQ TA AQ<h1>, mas tem q colocar o id da tag :D
+            document.getElementById("Resultado").innerHTML = soma
         }
 
     </script>
