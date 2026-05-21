@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <input id="usuario" type="text" placeholder="Digite seu nome de usuario">
+    <input id="senha" type="text" placeholder="Digite sua senha">
+
+    
+    <button onclick="login()">Login</button>]
+
+    
+
+    <script>
+
+        function login(){
+        let usuario = "stee"
+        let senha = "1111"
+
+        let usuarioDigitado = document.getElementById("usuario").value;
+        let senhaDigitada = document.getElementById("senha").value;
+
+            if (senha === senhaDgitada && usuario === usuarioDgitado){
+                alert("Login feito!")
+            } else {
+                alert("Nome de usuário ou senha incorretos!")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
+<!-- 3. Sistema de Login Simples
+Crie inputs para usuário e senha. Compare com valores fixos definidos no 
+JavaScript e informe se o
+login foi realizado.
+Dica: Comparação de strings, inputs e if/else -->

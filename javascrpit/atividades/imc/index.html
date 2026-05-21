@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <label for="altura">Altura</label>
+    <input id="altura" type="number" placeholder="Digite sua altura">
+
+    <label for="peso">Peso</label>
+    <input id="peso" type="number" placeholder="Digite seu peso">
+
+
+    <h2>Resultado: <span id="resultado">0</span></h2>
+    <h3 id="oms"></h3>
+
+    <button onclick="somar()">Somar</button>
+
+    <script>
+
+        function somar(){
+            let altura = document.getElementById("altura").value
+            let peso = document.getElementById("peso").value
+
+            let soma =  peso / (altura * altura)
+
+            document.getElementById("resultado").innerHTML = soma
+
+            if(soma < 18.5){
+                
+                let oms = "Abaixo do peso"
+                document.getElementById("oms").innerHTML = oms
+
+            }else if(soma < 24.9){
+
+                let oms = "Peso normal"
+                document.getElementById("oms").innerHTML = oms
+
+            }else{
+
+                let oms = "Acima do peso"
+                document.getElementById("oms").innerHTML = oms
+            }
+            
+        }
+        
+    </script>
+
+
+</body>
+</html>
+<!-- 1. Calculadora de IMC
+Peça o peso e a altura do usuário através de inputs. Calcule o IMC e mostre a classificação: abaixo do
+peso, normal, sobrepeso ou obesidade.
+Dica: Inputs, cálculo matemático e if/else -->

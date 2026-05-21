@@ -9,12 +9,12 @@
     <h1>Calculadora de soma</h1>
     <!-- esse for nao é um laço de repetiçao -->
     <label for="numUm">Primeiro número</label>
-    <input id="numUm" type="text" placeholder="Digite um número">
+    <input id="numUm" type="number" placeholder="Digite um número">
 
     <label for="numDois">Segundo Numero</label>
-    <input id="numDois" type="text" placeholder="Digite um segundo número">
+    <input id="numDois" type="number" placeholder="Digite um segundo número">
  
-    <h2>Resultado: <span id="soma">0</span></h2>
+    <h2>Resultado: <span id="resultado">0</span></h2>
 
     <button onclick="somar()">Somar</button>
 
@@ -30,7 +30,7 @@
             let soma = Number(numUm) + Number(numDois)
 
             //esse inner é oq esta dentro de uma certa tag, tipo <h1>ELE VAI PEGAR OQ TA AQ<h1>, mas tem q colocar o id da tag :D
-            document.getElementById("Resultado").innerHTML = soma
+            document.getElementById("resultado").innerHTML = soma
         }
 
     </script>
