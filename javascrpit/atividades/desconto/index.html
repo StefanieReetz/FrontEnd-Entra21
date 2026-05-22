@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Desconto</h1>
+
+    <label for="valor">Valor</label>
+    <input id="valor" type="number" placeholder="Digite um valor">
+
+    <label for="desconto">Desconto</label>
+    <input id="desconto" type="number" placeholder="Digite um desconto">
+
+    <h2>Resultado: <span id="resultado">0</span></h2>
+
+    <button onclick="somar()">Somar</button>
+    <script>
+        function somar(){
+            let valor = document.getElementById("valor").value
+            let desconto = document.getElementById("desconto").value
+
+            let soma =  (valor * desconto) / 100
+            let total = valor - soma
+
+            document.getElementById("resultado").innerHTML = total
+        }
+    </script>    
+</body>
+</html>
+<!-- 4. Calculadora de Desconto
+Peça o valor de um produto e a porcentagem de desconto usando inputs. Mostre o valor final e o valor
+descontado.
+Dica: Operações matemáticas e manipulação do HTML -->

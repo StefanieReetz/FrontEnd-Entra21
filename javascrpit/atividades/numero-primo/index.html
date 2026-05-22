@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Verificador de Número Primo</h1>
+
+    <label for="numero"></label>
+    <input id="numero" type="number" placeholder="Digite um numero">
+
+    <h2>Resultado: <span id="resultado"></span></h2>
+
+    <script>
+
+        let totaldivisores = 0
+
+        let numero = Number(document.getElementById("numero").value)
+
+        let resultado = ""
+
+        for(let i = 1;i >= numero; i++){
+            if(numero % i === 0){
+                totaldivisores++
+            }
+            
+            if(totaldivisores <= 2){
+                resultado = "Primo!"
+            } else{
+                resultado = "Não é primo!!"
+            }
+
+            document.getElementById("resultado").innerHTML = resultado
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
+
+<!-- 7. Verificador de Número Primo
+O usuário digita um número em um input. O sistema deve verificar se ele é primo ou não.
+Dica: Loops, operadores matemáticos e condicionais -->

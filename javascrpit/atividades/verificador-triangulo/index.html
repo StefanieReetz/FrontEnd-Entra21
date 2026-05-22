@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Verificador de Triângulo</h1>
+
+    <label for="lado1"></label>
+    <input id="lado1" type="number" placeholder="Digite o primeiro lado ">
+    
+    <label for="lado2"></label>
+    <input id="lado2" type="number" placeholder="Digite o segundo lado ">
+
+    <label for="lado3"></label>
+    <input id="lado3" type="number" placeholder="Digite o terceiro lado ">
+
+
+    <h2>Resultado: <span id="resultado"></span></h2>
+
+    <button onclick="verificar()">Somar</button>
+    
+    <script>
+
+        function verificar(){
+            let lado1 = Number(document.getElementById("lado1").value)
+            let lado2 = Number(document.getElementById("lado2").value)
+            let lado3 = Number(document.getElementById("lado3").value)
+            let resultado
+
+            if(
+                lado1 < (lado2 + lado3) &&
+                lado2 < (lado1 + lado3) &&
+                lado3 < (lado1 + lado2)
+
+            ){
+
+                if(lado1 === lado2 && lado2 === lado3){
+                
+                    resultado = "Triângulo Equilátero"
+
+                }else if(lado1 != lado2 && lado2 != lado3){
+
+                    resultado = "Triângulo Escaleno"
+
+                }else{
+                    resultado = "Triângulo Isósceles"
+                }
+
+            } else{
+                
+                resultado = "não é um Triângulo "
+            }
+            document.getElementById("resultado").innerHTML = resultado
+        }
+        
+    </script>
+    
+</body>
+</html>
+<!-- 5. Verificador de Triângulo
+Peça três lados em inputs diferentes e verifique se eles podem formar um triângulo. Depois informe se
+ele é equilátero, isósceles ou escaleno.
+Dica: Condicionais e operadores relacionais -->

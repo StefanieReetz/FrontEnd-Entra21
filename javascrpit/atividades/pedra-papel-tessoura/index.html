@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pedra papel ou tesoura</h1>
+
+    <select id="jogo">
+
+        <option value="pedra">Pedra</option>
+
+        <option value="papel">Papel</option>
+
+        <option value="tesoura">Tesoura</option>
+
+    </select>
+
+    <button onclick="jogar()">jogar</button>
+
+    <span>Escolha do bot:</span>
+
+    <span id="bot">N/A</span>
+
+    <p id="resultado"></p>
+
+    <script>
+
+    function jogar (){
+
+        let escolha = document.getElementById("jogo").value
+
+        let opcoes = ["pedra", "papel", "tesoura"];
+
+        let bot = opcoes[Math.floor(Math.random() * 3)]
+
+        let resultado = ""
+
+
+
+        if(escolha == bot){
+
+            document.getElementById("bot").innerHTML = bot
+
+            resultado = "Empate!"
+
+        }else if (
+
+            (escolha == "pedra" && bot == "tesoura") ||
+
+            (escolha == "papel" && bot == "pedra") ||
+
+            (escolha == "tesoura" && bot == "papel")){
+
+                document.getElementById("bot").innerHTML = bot
+
+                resultado = "Você ganhou!"
+
+        } else {
+
+            document.getElementById("bot").innerHTML = bot
+
+            resultado = "O bot ganhou!"
+
+        }
+
+        document.getElementById("resultado").innerHTML = resultado
+
+    }
+
+    </script>
+
+</body>
+ 
+</html>
+<!-- 8. Pedra, Papel e Tesoura
+O usuário escolhe pedra, papel ou tesoura através de um input ou select. O computador escolhe
+aleatoriamente e o sistema mostra quem venceu.
+Dica: Math.random(), arrays e condicionais. -->

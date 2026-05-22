@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contagem Regressiva</h1>
+
+    <label for="numero"></label>
+    <input id="numero" type="number" placeholder="Digite um numero ">
+
+    <button onclick="contar()">Contar</button>
+
+    <h2>Resultado:</h2>
+         <span id="resultado"></span>
+
+
+    <script>
+        function contar() {
+            let numero = Number(document.getElementById("numero").value);
+            let resultado = "";
+
+            for (let i = numero; i >= 0; i--) {
+                resultado += i + "<br>";
+            }
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+
+</body>
+</html>
+<!-- 6. Contagem Regressiva
+O usuário informa um número em um input e o sistema faz uma contagem regressiva até zero.
+Dica: Loops (for ou while) -->

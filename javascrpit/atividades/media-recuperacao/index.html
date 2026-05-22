@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Calculadora de Média com Recuperação</h1>
+
+    <label for="nota1">Digite a primeira nota</label>
+    <input id="nota1" type="number" placeholder="Digite a primeira nota ">
+
+    <label for="nota2">Digite a segunda nota</label>
+    <input id="nota2" type="number" placeholder="Digite a segunda nota ">
+
+    
+    <h2>Resultado: <span id="resultado"></span></h2>
+    
+    <button onclick="calcularMedia()">Somar</button>
+
+    <script>
+        function calcularMedia(){
+            let nota1 = Number(document.getElementById("nota1").value)
+            let nota2 = Number(document.getElementById("nota2").value)
+            let media = (nota1 + nota2)/2
+            let resultado
+
+            if(media < 7){
+
+                resultado = "faça uma recuperaçao"
+
+            } else{
+                resultado = "esta acima da media!"
+            }
+
+            document.getElementById("resultado").innerHTML = resultado
+
+        }
+
+    </script>
+    
+
+</body>
+</html>
+<!-- 9. Calculadora de Média com Recuperação
+Peça duas notas em inputs. Caso a média seja menor que 7, peça uma nota de recuperação e
+recalcule a média.
+Dica: If/else e cálculos -->
